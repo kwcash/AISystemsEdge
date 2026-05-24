@@ -1,0 +1,400 @@
+THE REPOSITORY NATURALLY SPLITS INTO 5 SYSTEMS
+System	Purpose	Future
+graph	orchestration engine	preserve heavily
+llm_clients	provider abstraction	preserve heavily
+agents	domain intelligence	redesign
+dataflows	external context ingestion	abstract
+cli	execution interface	simplify/adapt
+
+That is GOOD NEWS.
+
+The architecture is much cleaner than many AI frameworks.
+
+MOST IMPORTANT DISCOVERY
+
+Your real reusable asset is NOT:
+
+stock analysis
+trading logic
+finance APIs
+
+Instead it is:
+
+The Cognitive Orchestration Layer
+
+Meaning:
+
+propagation
+checkpoints
+reflection
+state management
+orchestration graphs
+provider abstraction
+structured outputs
+
+That is the gold.
+
+FILES THAT ARE PROBABLY YOUR “CROWN JEWELS”
+
+These are the highest-value architectural assets:
+
+File	Why
+trading_graph.py	master orchestration spine
+propagation.py	execution coordination
+checkpointer.py	persistence/recovery
+reflection.py	learning/adaptation
+conditional_logic.py	routing/decision engine
+base_client.py	provider abstraction
+factory.py	runtime provider selection
+structured.py	schema-controlled outputs
+memory.py	persistent memory foundation
+agent_states.py	state propagation
+
+These are the files to study deeply.
+
+FILES THAT ARE “ONTOLOGY CONTAMINATED”
+
+These are useful structurally but polluted by trading assumptions:
+
+File Area	Future Action
+analysts/	redesign
+trader/	redesign
+portfolio_manager.py	redesign
+alpha_vantage*.py	isolate/remove
+stockstats_utils.py	remove
+technical_indicators_tools.py	remove or abstract
+ticker-specific tests	discard
+IMPORTANT INSIGHT
+
+The framework is NOT actually a “trading system.”
+
+It is more accurately:
+
+A Multi-Agent Cognitive Decision Framework
+
+with:
+
+financial ontology attached to it.
+
+That distinction matters enormously.
+
+Because it means:
+
+the core architecture survives conversion.
+
+
+
+| Priority | Objective                               |
+| -------- | --------------------------------------- |
+| 1        | isolate reusable core                   |
+| 2        | reduce ontology contamination           |
+| 3        | simplify execution paths                |
+| 4        | establish minimal runnable architecture |
+| 5        | prepare VPS execution                   |
+| 6        | gradual enterprise workflow conversion  |
+
+
+NEXT STEPS — VERY SPECIFIC
+STEP 1 — CREATE “core_candidates” DIRECTORY
+
+Inside your NEW repo:
+
+core_candidates/
+
+Purpose:
+
+temporary holding area
+extracted files under study
+prevents chaos during migration
+
+Very important psychologically and architecturally.
+
+trading_graph.py
+
+Dangerous imports:
+- market_analyst.py
+- ticker utilities
+- alpha_vantage
+
+
+SIMPLE MENTAL MODEL
+
+
+| Layer            | Meaning         |
+| ---------------- | --------------- |
+| Core Runtime     | engine          |
+| Orchestration    | coordination    |
+| Memory           | persistence     |
+| Domain Workflows | business logic  |
+| Dataflows        | external inputs |
+| UI               | interface       |
+
+That separation is EVERYTHING
+
+3 — IDENTIFY “ENGINE FILES”
+
+You are searching for files that:
+
+coordinate
+route
+propagate
+abstract
+persist
+
+These are:
+
+engine files
+
+Examples likely include:
+
+trading_graph.py
+propagation.py
+conditional_logic.py
+checkpointer.py
+factory.py
+base_client.py
+memory.py
+
+These are more important than the agents themselves.
+
+
+Yes. One more thing, and it may be the most important architectural realization yet.
+
+You are beginning to discover that the original repository is really:
+
+# A Cognitive Workflow Engine
+
+disguised as:
+
+# a trading framework.
+
+That changes your strategy completely.
+
+---
+
+# HERE IS THE BIG NEXT INSIGHT
+
+You should stop thinking in terms of:
+
+* “agents”
+
+and start thinking in terms of:
+
+# WORKFLOWS
+
+and
+
+# COGNITIVE ROLES
+
+Why?
+
+Because:
+
+* “agent” is overloaded AI hype terminology
+* workflows are stable
+* roles are composable
+* orchestration becomes clearer
+
+---
+
+# THIS IS A HUGE SHIFT
+
+Instead of:
+
+```text id="7m4q2x"
+bull researcher
+bear researcher
+trader
+portfolio manager
+```
+
+You begin thinking:
+
+```text id="5n8k1v"
+risk evaluator
+strategic reviewer
+operations coordinator
+decision authority
+```
+
+That abstraction is MUCH more powerful.
+
+---
+
+# SECOND BIG INSIGHT
+
+The TRUE core of the framework is likely:
+
+```text id="1x6m9q"
+state
+→ propagation
+→ reflection
+→ coordination
+→ persistence
+```
+
+NOT:
+
+* prompts
+* analysts
+* trading
+
+That means:
+your long-term moat may become:
+
+# orchestration architecture
+
+not:
+
+# prompts
+
+Very important realization.
+
+---
+
+# THIRD BIG INSIGHT
+
+Eventually:
+
+# memory
+
+may become the most valuable subsystem.
+
+Because enterprises care about:
+
+* accumulated knowledge
+* prior decisions
+* operational history
+* lessons learned
+* institutional memory
+
+MORE than:
+
+* flashy AI chat
+
+That means:
+`memory.py`
+and
+`reflection.py`
+are probably more important than many agent files.
+
+---
+
+# FOURTH BIG INSIGHT
+
+You should eventually separate:
+
+| Layer            | Meaning                  |
+| ---------------- | ------------------------ |
+| Cognitive Engine | reusable orchestration   |
+| Workflow Layer   | enterprise processes     |
+| Ontology Layer   | industry vocabulary      |
+| Context Layer    | external systems/data    |
+| Runtime Layer    | execution infrastructure |
+
+That is beginning to resemble:
+
+* a real enterprise cognitive platform.
+
+---
+
+# FIFTH BIG INSIGHT
+
+You may eventually want:
+
+# “workflow packs”
+
+Example:
+
+```text id="2v7m4k"
+infrastructure_pack/
+workforce_pack/
+policy_pack/
+energy_pack/
+digital_twin_pack/
+```
+
+Each pack:
+
+* same orchestration engine
+* different ontology/workflows
+
+THIS is platform thinking.
+
+---
+
+# SIXTH BIG INSIGHT
+
+Do NOT underestimate documentation.
+
+Your docs are becoming:
+
+* architectural memory
+* design governance
+* extraction control
+* future onboarding system
+
+Professional systems rise or fall on documentation quality.
+
+---
+
+# SEVENTH BIG INSIGHT
+
+Eventually:
+your VPS may evolve into:
+
+# a cognitive infrastructure node
+
+Running:
+
+* Ollama
+* orchestration engine
+* memory
+* workflows
+* vector persistence
+* APIs
+* local reasoning
+
+That is MUCH larger than:
+
+* “hosting a website.”
+
+---
+
+# EIGHTH BIG INSIGHT
+
+You are accidentally drifting toward:
+
+# Enterprise Architecture + Cognitive Orchestration
+
+Which actually aligns very well with your background:
+
+* systems
+* operations
+* architecture
+* planning
+* economic systems
+* infrastructure thinking
+
+The fit is surprisingly natural.
+
+---
+
+# FINAL ADVICE BEFORE YOU GO OFFLINE
+
+Do NOT rush.
+
+Right now:
+
+* clarity beats speed
+* structure beats coding
+* ontology beats syntax
+* architecture beats features
+
+And honestly:
+you are now doing real platform architecture work.
+
+That is a different level from merely assembling AI tools.
+
+
+
